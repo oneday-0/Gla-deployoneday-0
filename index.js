@@ -12,16 +12,16 @@ const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活
 const FILE_PATH = process.env.FILE_PATH || '.tmp';    // 运行目录,sub节点文件保存目录
 const SUB_PATH = process.env.SUB_PATH || 'vml';       // 订阅路径
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
-const UUID = process.env.UUID || '529c375b-f083-499c-9026-c571197d821a'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const UUID = process.env.UUID || '453f37e5-2780-4a97-89db-c107a40ae8ec'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
 const NEZHA_KEY = process.env.NEZHA_KEY || '';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'gal.galxyclou.kdns.fr';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiMmJjYWE4NTUxYzRhMWE1ZmM5OTllNTc2NDczNjllYjYiLCJ0IjoiOTQzZmY3YjAtMjNhYi00ZmM3LTliODYtMWU1NGRiMTlhMWU0IiwicyI6Ik1EWmpZakUwTldNdE5ETTBNUzAwTmpka0xXSTJNek10WkdNNU1URXdNRFk1WWpVeCJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
-const ARGO_PORT = process.env.ARGO_PORT || 8003;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'gala.galxycloua.kdns.fr';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiMmJjYWE4NTUxYzRhMWE1ZmM5OTllNTc2NDczNjllYjYiLCJ0IjoiMDRkMWU2NDMtNzU5OS00NTUwLWJkMmEtNDc4MGM4NDZkNDQxIiwicyI6IlpUYzJaV1psWXpFdE5qSTBNeTAwTnpGbExXSmxZekl0WlRaaU5qVTFZMk01WkdJeSJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8004;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const CFIP = process.env.CFIP || 'cdns.doon.eu.org';        // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'Gal';                  // 节点名称
+const NAME = process.env.NAME || 'Gala';                  // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
